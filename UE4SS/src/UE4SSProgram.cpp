@@ -159,6 +159,11 @@ namespace RC
         return lib;
     }
 
+    auto setup_r2mod(wchar_t* mod_path_string) -> void
+    {
+        UE4SSProgram::get_program().setup_r2mod(mod_path_string);
+    }
+
     UE4SSProgram::UE4SSProgram(const std::wstring& moduleFilePath, std::initializer_list<BinaryOptions> options) : MProgram(options)
     {
         ProfilerScope();
@@ -283,6 +288,7 @@ namespace RC
             Output::send(STR("game executable directory: {}\n"), m_game_executable_directory.c_str());
             Output::send(STR("game executable: {} ({} bytes)\n\n\n"), m_game_path_and_exe_name.c_str(), std::filesystem::file_size(m_game_path_and_exe_name));
             Output::send(STR("mods directory: {}\n"), m_mods_directory.c_str());
+            Output::send(STR("reloaded mods directory: {}\n"), m_reloaded_mods_directory.c_str());
             Output::send(STR("log directory: {}\n"), m_log_directory.c_str());
             Output::send(STR("object dumper directory: {}\n\n\n"), m_object_dumper_output_directory.c_str());
         }
@@ -386,6 +392,7 @@ namespace RC
         std::filesystem::path game_directory_path = game_exe_path.parent_path();
         m_working_directory = m_root_directory;
         m_mods_directory = m_working_directory / "Mods";
+        m_reloaded_mods_directory = m_root_directory.parent_path().wstring();
         m_game_executable_directory = game_directory_path /*game_exe_path.parent_path()*/;
         m_settings_path_and_file = m_root_directory;
         m_game_path_and_exe_name = game_exe_path;
@@ -965,6 +972,30 @@ namespace RC
         LuaType::StaticState::m_property_value_pushers.emplace(FName(L"InterfaceProperty").GetComparisonIndex(), &LuaType::push_interfaceproperty);
     }
 
+    auto UE4SSProgram::setup_r2mod(wchar_t* mod_path_string) -> void
+    {
+        std::filesystem::path mod_path = std::filesystem::path((std::wstring)mod_path_string);
+        std::filesystem::directory_entry mod_subdirectory = std::filesystem::directory_entry(mod_path);
+
+        m_r2_subdirectories.push_back(mod_subdirectory);
+
+        std::wstring directory_lowercase = mod_subdirectory.path().stem().wstring();
+        std::transform(directory_lowercase.begin(), directory_lowercase.end(), directory_lowercase.begin(), std::towlower);
+
+        if (directory_lowercase == L"shared")
+        {
+            // Do stuff when shared libraries have been implemented
+        }
+        else
+        {
+            // Create the mod but don't install it yet
+            if (std::filesystem::exists(mod_subdirectory.path() / "scripts"))
+                m_mods.emplace_back(std::make_unique<LuaMod>(*this, mod_subdirectory.path().parent_path().stem().wstring(), mod_subdirectory.path().wstring()));
+            if (std::filesystem::exists(mod_subdirectory.path() / "dlls"))
+                m_mods.emplace_back(std::make_unique<CppMod>(*this, mod_subdirectory.path().parent_path().stem().wstring(), mod_subdirectory.path().wstring()));
+        }
+    }
+
     auto UE4SSProgram::setup_mods() -> void
     {
         ProfilerScope();
@@ -1197,6 +1228,47 @@ namespace RC
             mod->start_mod();
         }
 
+        // Part #3: Start all mods in the Reloaded II mods directory
+        Output::send(STR("Starting mods (from Reloaded II), no defined load order)...\n"));
+
+        for (const auto& mod_directory : UE4SSProgram::get_program().m_r2_subdirectories)
+        {
+            std::error_code ec{};
+
+            if (!mod_directory.is_directory(ec))
+            {
+                continue;
+            }
+            if (ec.value() != 0)
+            {
+                return std::format("is_directory ran into error {}", ec.value());
+            }
+
+            if (ec.value() != 0)
+            {
+                return std::format("exists ran into error {}", ec.value());
+            }
+
+            auto mod = UE4SSProgram::find_mod_by_name<ModType>(mod_directory.path().parent_path().stem().c_str(), UE4SSProgram::IsInstalled::Yes);
+            if (!dynamic_cast<ModType*>(mod))
+            {
+                continue;
+            }
+            if (!mod)
+            {
+                Output::send<LogLevel::Warning>(STR("Found a mod in the Reloaded II directory, but mod has not been installed properly.\n"));
+                continue;
+            }
+
+            if (mod->is_started())
+            {
+                continue;
+            }
+
+            Output::send(STR("Starting mod '{}'\n"), mod->get_name().data());
+            mod->start_mod();
+        }
+
         return {};
     }
 
@@ -1322,6 +1394,11 @@ namespace RC
         return m_module_file_path.c_str();
     }
 
+     auto UE4SSProgram::get_game_exe_path() -> File::StringViewType
+    {
+        return m_game_path_and_exe_name.c_str();
+    }
+
     auto UE4SSProgram::get_working_directory() -> File::StringViewType
     {
         return m_working_directory.c_str();
@@ -1330,6 +1407,11 @@ namespace RC
     auto UE4SSProgram::get_mods_directory() -> File::StringViewType
     {
         return m_mods_directory.c_str();
+    }
+
+    auto UE4SSProgram::get_reloaded_mods_directory()->File::StringViewType
+    {
+        return m_reloaded_mods_directory.c_str();
     }
 
     auto UE4SSProgram::generate_uht_compatible_headers() -> void

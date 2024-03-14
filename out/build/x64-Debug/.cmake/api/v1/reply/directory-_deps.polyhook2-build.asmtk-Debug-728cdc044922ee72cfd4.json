@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/polyhook2-build/asmtk",
+		"source" : "out/build/x64-Debug/_deps/polyhook2-src/asmtk"
+	}
+}

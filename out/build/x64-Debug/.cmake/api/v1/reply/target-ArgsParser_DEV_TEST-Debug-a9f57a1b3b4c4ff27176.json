@@ -1,0 +1,197 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Output/Debug/bin/ArgsParser_DEV_TEST.exe"
+		},
+		{
+			"path" : "Output/Debug/bin/ArgsParser_DEV_TEST.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_link_options",
+			"add_compile_options",
+			"add_compile_definitions",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"deps/first/ArgsParser/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 100,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 99,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 145,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 23,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++latest -MDd"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/W3"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/wd4005"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/wd4251"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/wd4068"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/Zc:inline"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/Zc:strictStrings"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/Zc:preprocessor"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_UNICODE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/ArgsParser/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/Helpers/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					6
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "ArgsParser_DEV_TEST::@571cae642ebd13747ded",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/DEBUG:FULL",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "ArgsParser_DEV_TEST",
+	"nameOnDisk" : "ArgsParser_DEV_TEST.exe",
+	"paths" : 
+	{
+		"build" : "deps/first/ArgsParser",
+		"source" : "deps/first/ArgsParser"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "deps/first/ArgsParser/src/ArgsParser/main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

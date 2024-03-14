@@ -1,0 +1,2005 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Output/Game__Shipping__Win64/UE4SS/bin/UE4SS.dll"
+		},
+		{
+			"path" : "Output/Game__Shipping__Win64/UE4SS/bin/UE4SS.lib"
+		},
+		{
+			"path" : "Output/Game__Shipping__Win64/UE4SS/bin/UE4SS.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_link_options",
+			"target_link_libraries",
+			"link_asmjit",
+			"_corrosion_add_library_target",
+			"_generator_add_package_targets",
+			"_generator_add_cargo_targets",
+			"corrosion_import_crate",
+			"set_property",
+			"add_dependencies",
+			"add_compile_options",
+			"target_compile_options",
+			"target_compile_definitions",
+			"add_compile_definitions",
+			"target_include_directories",
+			"target_compile_features",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"UE4SS/CMakeLists.txt",
+			"CMakeLists.txt",
+			"deps/first/Profiler/CMakeLists.txt",
+			"out/build/x64-Release/_deps/polyhook2-src/CMakeLists.txt",
+			"deps/first/Unreal/CMakeLists.txt",
+			"deps/first/LuaMadeSimple/CMakeLists.txt",
+			"deps/first/IniParser/CMakeLists.txt",
+			"out/build/x64-Release/_deps/corrosion-src/cmake/Corrosion.cmake",
+			"out/build/x64-Release/_deps/corrosion-src/cmake/CorrosionGenerator.cmake",
+			"deps/third/corrosion/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 117,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 100,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 157,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 166,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 38,
+				"parent" : 6
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 252,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 244,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 237,
+				"parent" : 10
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 60,
+				"parent" : 12
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 216,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 217,
+				"parent" : 8
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 34,
+				"parent" : 16
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 42,
+				"parent" : 18
+			},
+			{
+				"file" : 9
+			},
+			{
+				"command" : 7,
+				"file" : 9,
+				"line" : 7,
+				"parent" : 20
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 918,
+				"parent" : 21
+			},
+			{
+				"command" : 5,
+				"file" : 8,
+				"line" : 266,
+				"parent" : 22
+			},
+			{
+				"command" : 4,
+				"file" : 8,
+				"line" : 113,
+				"parent" : 23
+			},
+			{
+				"command" : 2,
+				"file" : 7,
+				"line" : 450,
+				"parent" : 24
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 407,
+				"parent" : 24
+			},
+			{
+				"command" : 9,
+				"file" : 7,
+				"line" : 399,
+				"parent" : 24
+			},
+			{
+				"command" : 10,
+				"file" : 1,
+				"line" : 99,
+				"parent" : 2
+			},
+			{
+				"command" : 11,
+				"file" : 1,
+				"line" : 214,
+				"parent" : 2
+			},
+			{
+				"command" : 12,
+				"file" : 1,
+				"line" : 216,
+				"parent" : 2
+			},
+			{
+				"command" : 12,
+				"file" : 0,
+				"line" : 138,
+				"parent" : 0
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			},
+			{
+				"command" : 14,
+				"file" : 0,
+				"line" : 127,
+				"parent" : 0
+			},
+			{
+				"command" : 15,
+				"file" : 0,
+				"line" : 125,
+				"parent" : 0
+			},
+			{
+				"command" : 16,
+				"file" : 0,
+				"line" : 130,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /MP /W3 /wd4005 /wd4251 /wd4068 /Zc:inline /Zc:strictStrings /Zc:preprocessor -std:c++latest -MD /GL"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "/W3"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "/wd4005"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "/wd4251"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "/wd4068"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "/Zc:inline"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "/Zc:strictStrings"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "/Zc:preprocessor"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "/Zi"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "/O2"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "/Ob2"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "/DNDEBUG"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/GL"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/permissive-"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/Zc:lambda"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/wd4201"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DASMTK_STATIC"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DASMJIT_STATIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "IS_SUPERLUMINAL=0"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "IS_TRACY=1"
+				},
+				{
+					"backtrace" : 30,
+					"define" : "OVERRIDE_PLATFORM_HEADER_NAME=Windows"
+				},
+				{
+					"backtrace" : 30,
+					"define" : "PLATFORM_MICROSOFT"
+				},
+				{
+					"backtrace" : 30,
+					"define" : "PLATFORM_WINDOWS"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "RC_ASM_HELPER_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "RC_DYNAMIC_OUTPUT_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "RC_FILE_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "RC_FUNCTION_TIMER_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "RC_INI_PARSER_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "RC_INPUT_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "RC_JSON_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "RC_JSON_PARSER_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "RC_LUA_MADE_SIMPLE_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "RC_LUA_WRAPPER_GENERATOR_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "RC_PARSER_BASE_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "RC_SINGLE_PASS_SIG_SCANNER_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "RC_SINGLE_PASS_SIG_SCANNER_STATIC"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "RC_UE4SS_EXPORTS"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "RC_UNREAL_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "TRACY_ENABLE"
+				},
+				{
+					"backtrace" : 30,
+					"define" : "UBT_COMPILED_PLATFORM=Win64"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "UE4SS_CONFIGURATION=\"Game__Shipping__Win64\""
+				},
+				{
+					"define" : "UE4SS_EXPORTS"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "UE4SS_LIB_BETA_STARTED=1"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "UE4SS_LIB_BUILD_GITSHA=\"332eea5\""
+				},
+				{
+					"backtrace" : 32,
+					"define" : "UE4SS_LIB_IS_BETA=1"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "UE4SS_LIB_VERSION_BETA=0"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "UE4SS_LIB_VERSION_HOTFIX=1"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "UE4SS_LIB_VERSION_MAJOR=3"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "UE4SS_LIB_VERSION_MINOR=0"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "UE4SS_LIB_VERSION_PRERELEASE=0"
+				},
+				{
+					"backtrace" : 30,
+					"define" : "UE_BUILD_SHIPPING"
+				},
+				{
+					"backtrace" : 30,
+					"define" : "UE_GAME"
+				},
+				{
+					"backtrace" : 30,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "ZYCORE_STATIC_BUILD"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "ZYDIS_STATIC_BUILD"
+				},
+				{
+					"backtrace" : 30,
+					"define" : "_UNICODE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 33,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/UE4SS/include"
+				},
+				{
+					"backtrace" : 33,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/UE4SS/generated_include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/File/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/DynamicOutput/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/Unreal/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/Unreal/generated_include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/Unreal/include/Unreal"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/Unreal/include/Unreal/Core"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/SinglePassSigScanner/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/Constructs/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/Helpers/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/Function/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/polyhook2-src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/zydis-src/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/zydis-build"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/zydis-src/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/zydis-src/dependencies/zycore/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/zydis-build/zycore"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/zydis-src/dependencies/zycore/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/polyhook2-src/asmtk/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/polyhook2-src/asmjit/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/ASMHelper/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/LuaMadeSimple/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/LuaRaw/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/IniParser/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/ParserBase/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/JSON/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/Input/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/MProgram/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/ScopedTimer/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/Profiler/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/imgui-src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/imguitextedit-src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/iconfontcppheaders-src"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/glaze-src/include"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/tracy-src/public"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/third/GLFW/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					34,
+					4,
+					4
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "ASMHelper::@0e3a0fc10b8b1fb016cd"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "DynamicOutput::@c603931efbe8063ed5cf"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "File::@0f743d1a7b1d0f8915b8"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "Input::@97779eb0aeb89cb4590d"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "LuaMadeSimple::@cd4d18c1a864ad25b06b"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "IniParser::@6b310081238443d32d6a"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "JSON::@b01c6ac783953b1593ed"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "ParserBase::@60c25f26aaf859407dca"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "LuaRaw::@35828784d667ef064c3a"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "Unreal::@c880d69f369d0e99894c"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "SinglePassSigScanner::@b0304eec90f86f0980b0"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "TracyClient::@5312c6e87bd9d431bdc8"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "ImGui::@e009f96866fd68e18ac4"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "asmjit::@9f19bd05ce2d437df714"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "Zydis::@de1ff595a9a26ff473a0"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "PolyHook_2::@238d31c6c89a69dd62b9"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "Zycore::@3b6f65a47b8aaae0f406"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "asmtk::@9f19bd05ce2d437df714"
+		},
+		{
+			"backtrace" : 27,
+			"id" : "cargo-build_patternsleuth_bind::@6da358afedac70ca666d"
+		}
+	],
+	"fileSets" : 
+	[
+		{
+			"baseDirectories" : 
+			[
+				"UE4SS/include"
+			],
+			"name" : "ue4ss_headers",
+			"type" : "HEADERS",
+			"visibility" : "PUBLIC"
+		}
+	],
+	"id" : "UE4SS::@f274a5b32251411123d7",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64 /DEBUG:FULL",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/DEBUG:FULL",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/LTCG",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/INCREMENTAL:NO",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/INCREMENTAL:NO /LTCG",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\File.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\DynamicOutput.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\Unreal.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\SinglePassSigScanner.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\LuaMadeSimple.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\IniParser.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\JSON.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\Input.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\ImGui.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\PolyHook_2.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "d3d11.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "D:\\VSProjects\\UE4SSReloaded\\RE-UE4SS\\deps\\third\\GLFW\\lib-vc2022\\glfw3.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "opengl32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "dbghelp.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "psapi.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\TracyClient.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\asmtk.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\asmjit.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\ASMHelper.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\DynamicOutput.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\Zydis.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\Zycore.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\LuaRaw.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\ParserBase.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\File.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\patternsleuth_bind.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "kernel32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "advapi32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "bcrypt.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "ntdll.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "userenv.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "ws2_32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "kernel32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "advapi32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "bcrypt.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "ntdll.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "userenv.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "ws2_32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX",
+		"lto" : true
+	},
+	"name" : "UE4SS",
+	"nameOnDisk" : "UE4SS.dll",
+	"paths" : 
+	{
+		"build" : "UE4SS",
+		"source" : "UE4SS"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "src",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				5,
+				11
+			]
+		},
+		{
+			"name" : "src\\ObjectDumper",
+			"sourceIndexes" : 
+			[
+				4
+			]
+		},
+		{
+			"name" : "src\\Mod",
+			"sourceIndexes" : 
+			[
+				6,
+				7,
+				8,
+				9
+			]
+		},
+		{
+			"name" : "src\\UnrealCustom",
+			"sourceIndexes" : 
+			[
+				10
+			]
+		},
+		{
+			"name" : "src\\LuaType",
+			"sourceIndexes" : 
+			[
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39
+			]
+		},
+		{
+			"name" : "src\\SDKGenerator",
+			"sourceIndexes" : 
+			[
+				40,
+				41,
+				42,
+				43,
+				44
+			]
+		},
+		{
+			"name" : "src\\USMapGenerator",
+			"sourceIndexes" : 
+			[
+				45
+			]
+		},
+		{
+			"name" : "src\\GUI",
+			"sourceIndexes" : 
+			[
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58
+			]
+		},
+		{
+			"name" : "include",
+			"sourceIndexes" : 
+			[
+				59,
+				60,
+				61,
+				84,
+				85,
+				86,
+				87,
+				126,
+				127,
+				128,
+				131
+			]
+		},
+		{
+			"name" : "include\\GUI",
+			"sourceIndexes" : 
+			[
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				81,
+				82,
+				83
+			]
+		},
+		{
+			"name" : "include\\GUI\\LiveView\\Filter",
+			"sourceIndexes" : 
+			[
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80
+			]
+		},
+		{
+			"name" : "include\\LuaType",
+			"sourceIndexes" : 
+			[
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115
+			]
+		},
+		{
+			"name" : "include\\Mod",
+			"sourceIndexes" : 
+			[
+				116,
+				117,
+				118,
+				119
+			]
+		},
+		{
+			"name" : "include\\ObjectDumper",
+			"sourceIndexes" : 
+			[
+				120
+			]
+		},
+		{
+			"name" : "include\\SDKGenerator",
+			"sourceIndexes" : 
+			[
+				121,
+				122,
+				123,
+				124,
+				125
+			]
+		},
+		{
+			"name" : "include\\USMapGenerator",
+			"sourceIndexes" : 
+			[
+				129
+			]
+		},
+		{
+			"name" : "include\\UnrealCustom",
+			"sourceIndexes" : 
+			[
+				130
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/main_ue4ss_rewritten.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/UE4SSProgram.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/CrashDumper.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/SettingsManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/ObjectDumper/ObjectToString.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/Signatures.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/Mod/Mod.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/Mod/LuaMod.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/Mod/CppMod.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/Mod/CppUserModBase.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/UnrealCustom/CustomProperty.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaLibrary.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaModRef.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaUObject.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaUStruct.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaUClass.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaAActor.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaFName.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaFURL.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaUScriptStruct.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaTArray.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaUFunction.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaCustomProperty.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaFText.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaFString.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaXProperty.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaXFieldClass.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaXObjectProperty.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaXBoolProperty.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaXStructProperty.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaXEnumProperty.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaXArrayProperty.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaXInterfaceProperty.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaUEnum.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaFOutputDevice.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaFWeakObjectPtr.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaFSoftObjectPath.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaTSoftClassPtr.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaUWorld.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/LuaType/LuaUInterface.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/SDKGenerator/Common.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/SDKGenerator/Generator.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/SDKGenerator/UEHeaderGenerator.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/SDKGenerator/JSONDumper.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/SDKGenerator/TMapOverrideGen.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/USMapGenerator/Generator.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/GUI/GUI.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/GUI/GUITab.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/GUI/DX11.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/GUI/GLFW3_OpenGL3.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/GUI/Windows.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/GUI/Console.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/GUI/ConsoleOutputDevice.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/GUI/LiveView.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/GUI/Dumpers.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/GUI/BPMods.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/GUI/ImGuiUtility.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/GUI/UFunctionCallerWidget.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/src/GUI/SearcherWidget.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 35,
+			"fileSetIndex" : 0,
+			"path" : "UE4SS/include/Common.hpp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 35,
+			"fileSetIndex" : 0,
+			"path" : "UE4SS/include/CrashDumper.hpp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 35,
+			"fileSetIndex" : 0,
+			"path" : "UE4SS/include/ExceptionHandling.hpp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/BPMods.hpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/Console.hpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/ConsoleOutputDevice.hpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/DX11.hpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/Dumpers.hpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/GLFW3_OpenGL3.hpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/GUI.hpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/GUITab.hpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/ImGuiUtility.hpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/LiveView.hpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/LiveView/Filter/DefaultObjectsOnly.hpp",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/LiveView/Filter/ExcludeClassName.hpp",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/LiveView/Filter/FunctionParamFlags.hpp",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/LiveView/Filter/HasProperty.hpp",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/LiveView/Filter/HasPropertyType.hpp",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/LiveView/Filter/IncludeDefaultObjects.hpp",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/LiveView/Filter/InstancesOnly.hpp",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/LiveView/Filter/NonInstancesOnly.hpp",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/LiveView/Filter/SearchFilter.hpp",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/SearcherWidget.hpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/UFunctionCallerWidget.hpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/GUI/Windows.hpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 35,
+			"fileSetIndex" : 0,
+			"path" : "UE4SS/include/LuaCustomMemberFunctions.hpp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 35,
+			"fileSetIndex" : 0,
+			"path" : "UE4SS/include/LuaLibrary.hpp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 35,
+			"fileSetIndex" : 0,
+			"path" : "UE4SS/include/LuaScriptMemoryAccess.hpp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 35,
+			"fileSetIndex" : 0,
+			"path" : "UE4SS/include/LuaTests.hpp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaAActor.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaCustomProperty.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaFName.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaFOutputDevice.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaFSoftObjectPath.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaFString.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaFText.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaFURL.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaFWeakObjectPtr.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaModRef.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaTArray.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaTSoftClassPtr.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaUClass.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaUEnum.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaUFunction.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaUInterface.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaUObject.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaUScriptStruct.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaUStruct.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaUWorld.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaXArrayProperty.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaXBoolProperty.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaXEnumProperty.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaXFieldClass.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaXInterfaceProperty.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaXObjectProperty.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaXProperty.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/LuaType/LuaXStructProperty.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/Mod/CppMod.hpp",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/Mod/CppUserModBase.hpp",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/Mod/LuaMod.hpp",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/Mod/Mod.hpp",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/ObjectDumper/ObjectToString.hpp",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/SDKGenerator/Common.hpp",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/SDKGenerator/Generator.hpp",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/SDKGenerator/JSONDumper.hpp",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/SDKGenerator/TMapOverrideGen.hpp",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/SDKGenerator/UEHeaderGenerator.hpp",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 35,
+			"fileSetIndex" : 0,
+			"path" : "UE4SS/include/SettingsManager.hpp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 35,
+			"fileSetIndex" : 0,
+			"path" : "UE4SS/include/Signatures.hpp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 35,
+			"fileSetIndex" : 0,
+			"path" : "UE4SS/include/UE4SSProgram.hpp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/USMapGenerator/Generator.hpp",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 35,
+			"path" : "UE4SS/include/UnrealCustom/CustomProperty.hpp",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 35,
+			"fileSetIndex" : 0,
+			"path" : "UE4SS/include/UnrealDef.hpp",
+			"sourceGroupIndex" : 8
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

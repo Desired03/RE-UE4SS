@@ -1,0 +1,74 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"doxygen_add_docs"
+		],
+		"files" : 
+		[
+			"C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/FindDoxygen.cmake",
+			"out/build/x64-Release/_deps/zydis-src/dependencies/zycore/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 232,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1208,
+				"parent" : 1
+			}
+		]
+	},
+	"id" : "ZycoreDoc::@3b6f65a47b8aaae0f406",
+	"name" : "ZycoreDoc",
+	"paths" : 
+	{
+		"build" : "_deps/zydis-build/zycore",
+		"source" : "out/build/x64-Release/_deps/zydis-src/dependencies/zycore"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/_deps/zydis-build/zycore/CMakeFiles/ZycoreDoc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/_deps/zydis-build/zycore/CMakeFiles/ZycoreDoc.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

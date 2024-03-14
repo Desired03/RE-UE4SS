@@ -1,0 +1,591 @@
+{
+	"archive" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64",
+				"role" : "flags"
+			}
+		]
+	},
+	"artifacts" : 
+	[
+		{
+			"path" : "Output/Game__Shipping__Win64/bin/Zydis.lib"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"target_link_libraries",
+			"add_compile_options",
+			"target_compile_options",
+			"zyan_set_common_flags",
+			"add_compile_definitions",
+			"target_compile_definitions",
+			"target_include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"out/build/x64-Release/_deps/zydis-src/CMakeLists.txt",
+			"CMakeLists.txt",
+			"out/build/x64-Release/_deps/zydis-src/dependencies/zycore/cmake/zyan-functions.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 150,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 292,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 154,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 99,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 166,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 9,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 145,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 145,
+				"parent" : 4
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 151,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 161,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 155,
+				"parent" : 0
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 209,
+				"parent" : 0
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 233,
+				"parent" : 0
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 241,
+				"parent" : 0
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 249,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /MP /W3 /wd4005 /wd4251 /wd4068 /Zc:inline /Zc:strictStrings /Zc:preprocessor -MD"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/W3"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/wd4005"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/wd4251"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/wd4068"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/Zc:inline"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/Zc:strictStrings"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/Zc:preprocessor"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/wd4201"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "OVERRIDE_PLATFORM_HEADER_NAME=Windows"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "PLATFORM_MICROSOFT"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "PLATFORM_WINDOWS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "UBT_COMPILED_PLATFORM=Win64"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "UE_BUILD_SHIPPING"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "UE_GAME"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "ZYCORE_STATIC_BUILD"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "ZYDIS_STATIC_BUILD"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "_UNICODE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 12,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/zydis-src/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/zydis-build"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/zydis-src/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/zydis-src/dependencies/zycore/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Release/_deps/zydis-build/zycore"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				23,
+				24,
+				27,
+				28,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "Zycore::@3b6f65a47b8aaae0f406"
+		}
+	],
+	"id" : "Zydis::@de1ff595a9a26ff473a0",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/install/x64-Release"
+		}
+	},
+	"name" : "Zydis",
+	"nameOnDisk" : "Zydis.lib",
+	"paths" : 
+	{
+		"build" : "_deps/zydis-build",
+		"source" : "out/build/x64-Release/_deps/zydis-src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				20,
+				21,
+				22,
+				25,
+				26,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				23,
+				24,
+				27,
+				28,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 13,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Defines.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/MetaInfo.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Mnemonic.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Register.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Segment.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/SharedTypes.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/ShortString.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Status.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Utils.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Zydis.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Internal/SharedData.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Internal/String.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/MetaInfo.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/Mnemonic.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/Register.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/Segment.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/SharedData.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/String.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/Utils.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/Zydis.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Decoder.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/DecoderTypes.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Internal/DecoderData.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/Decoder.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/DecoderData.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 15,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Encoder.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 15,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Internal/EncoderData.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 15,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/Encoder.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 15,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/EncoderData.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Disassembler.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Formatter.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/FormatterBuffer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Internal/FormatterATT.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Internal/FormatterBase.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"path" : "out/build/x64-Release/_deps/zydis-src/include/Zydis/Internal/FormatterIntel.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/Disassembler.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/Formatter.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/FormatterBuffer.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/FormatterATT.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/FormatterBase.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Release/_deps/zydis-src/src/FormatterIntel.c",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

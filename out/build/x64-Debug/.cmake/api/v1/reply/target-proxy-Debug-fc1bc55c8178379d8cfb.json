@@ -1,0 +1,337 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Output/Debug/proxy/bin/dwmapi.dll"
+		},
+		{
+			"path" : "Output/Debug/proxy/bin/dwmapi.lib"
+		},
+		{
+			"path" : "Output/Debug/proxy/bin/dwmapi.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_link_options",
+			"target_link_libraries",
+			"add_dependencies",
+			"add_custom_command",
+			"target_compile_definitions",
+			"add_compile_options"
+		],
+		"files" : 
+		[
+			"UE4SS/proxy_generator/proxy/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 100,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 216,
+				"parent" : 2
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 99,
+				"parent" : 2
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DWIN32 -D_DEBUG"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_UNICODE"
+				},
+				{
+					"define" : "proxy_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/File/include"
+				}
+			],
+			"language" : "RC",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++latest -MDd"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "/W3"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "/wd4005"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "/wd4251"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "/wd4068"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "/Zc:inline"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "/Zc:strictStrings"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "/Zc:preprocessor"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_UNICODE"
+				},
+				{
+					"define" : "proxy_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/File/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					4
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				1
+			]
+		},
+		{
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_UNICODE"
+				},
+				{
+					"define" : "proxy_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/File/include"
+				}
+			],
+			"language" : "ASM_MASM",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "File::@0f743d1a7b1d0f8915b8"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "proxy_files::@b2eb18a4a6936c46c1d5"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "proxy_generator::@a3527e0b46aad388032b"
+		}
+	],
+	"id" : "proxy::@b2eb18a4a6936c46c1d5",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/DEBUG:FULL",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/DEF:UE4SS\\proxy_generator\\proxy\\dwmapi.def",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Debug\\bin\\File.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "proxy",
+	"nameOnDisk" : "dwmapi.dll",
+	"paths" : 
+	{
+		"build" : "UE4SS/proxy_generator/proxy",
+		"source" : "UE4SS/proxy_generator/proxy"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				3
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				4
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/proxy_generator/proxy/proxy.rc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/UE4SS/proxy_generator/proxy/dllmain.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 2,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/UE4SS/proxy_generator/proxy/dwmapi.asm",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/UE4SS/proxy_generator/proxy/dwmapi.def",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/UE4SS/proxy_generator/proxy/dllmain.cpp.rule",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

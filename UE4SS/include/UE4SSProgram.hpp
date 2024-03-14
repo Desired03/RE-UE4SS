@@ -62,6 +62,8 @@ namespace RC
         uint64_t safety_padding[8]{0};
     };
 
+    EXTERN_C RC_UE4SS_API auto setup_r2mod(wchar_t* mod_path) -> void;
+
     class UE4SSProgram : public MProgram
     {
       public:
@@ -90,6 +92,7 @@ namespace RC
         std::filesystem::path m_module_file_path;
         std::filesystem::path m_working_directory;
         std::filesystem::path m_mods_directory;
+        std::filesystem::path m_reloaded_mods_directory;
         std::filesystem::path m_game_executable_directory;
         std::filesystem::path m_log_directory;
         std::filesystem::path m_object_dumper_output_directory;
@@ -123,6 +126,7 @@ namespace RC
 
       public:
         static inline std::vector<std::unique_ptr<Mod>> m_mods;
+        static inline std::vector<std::filesystem::directory_entry> m_r2_subdirectories; // Reloaded II subdirectories
 
         static inline RecognizableStruct m_shared_functions{};
 
@@ -179,13 +183,16 @@ namespace RC
         auto fire_dll_load_for_cpp_mods(std::wstring_view dll_name) -> void;
 
       public:
+        auto setup_r2mod(wchar_t* mod_path_string) -> void;
         auto init() -> void;
         auto is_program_started() -> bool;
         auto reinstall_mods() -> void;
         auto get_object_dumper_output_directory() -> const File::StringType;
         RC_UE4SS_API auto get_module_directory() -> File::StringViewType;
+        RC_UE4SS_API auto get_game_exe_path() -> File::StringViewType; // Use this to get game content for Reloaded II, not module_directory
         RC_UE4SS_API auto get_working_directory() -> File::StringViewType;
         RC_UE4SS_API auto get_mods_directory() -> File::StringViewType;
+        RC_UE4SS_API auto get_reloaded_mods_directory() -> File::StringViewType;
         RC_UE4SS_API auto generate_uht_compatible_headers() -> void;
         RC_UE4SS_API auto generate_cxx_headers(const std::filesystem::path& output_dir) -> void;
         RC_UE4SS_API auto generate_lua_types(const std::filesystem::path& output_dir) -> void;

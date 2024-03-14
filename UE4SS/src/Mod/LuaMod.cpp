@@ -816,6 +816,7 @@ namespace RC
         lua_getfield(lua_state, -1, "path");
         std::string current_paths = lua_tostring(lua_state, -1);
         current_paths.append(std::format(";{}\\{}\\Scripts\\?.lua", to_string(m_program.get_mods_directory()).c_str(), to_string(get_name())));
+        current_paths.append(std::format(";{}\\{}\\UE4SS\\Scripts\\?.lua", to_string(m_program.get_reloaded_mods_directory()).c_str(), to_string(get_name()))); // Reloaded II
         current_paths.append(std::format(";{}\\shared\\?.lua", to_string(m_program.get_mods_directory()).c_str()));
         current_paths.append(std::format(";{}\\shared\\?\\?.lua", to_string(m_program.get_mods_directory()).c_str()));
         lua_pop(lua_state, 1);
@@ -825,7 +826,9 @@ namespace RC
         lua_getfield(lua_state, -1, "cpath");
         std::string current_cpaths = lua_tostring(lua_state, -1);
         current_cpaths.append(std::format(";{}\\{}\\Scripts\\?.dll", to_string(m_program.get_mods_directory()).c_str(), to_string(get_name())));
+        current_cpaths.append(std::format(";{}\\{}\\UE4SS\\Scripts\\?.dll", to_string(m_program.get_reloaded_mods_directory()).c_str(), to_string(get_name()))); // Reloaded II
         current_cpaths.append(std::format(";{}\\{}\\?.dll", to_string(m_program.get_mods_directory()).c_str(), to_string(get_name())));
+        current_cpaths.append(std::format(";{}\\{}\\UE4SS\\?.dll", to_string(m_program.get_reloaded_mods_directory()).c_str(), to_string(get_name()))); // Reloaded II
         lua_pop(lua_state, 1);
         lua_pushstring(lua_state, current_cpaths.c_str());
         lua_setfield(lua_state, -2, "cpath");
@@ -1878,17 +1881,18 @@ Overloads:
             auto mod = get_mod_ref(lua);
             auto hook_lua = make_hook_state(mod);
 
+            // Duplicate the Lua function to the top of the stack for lua_xmove and luaL_ref
+            lua_pushvalue(lua.get_lua_state(), 1);
+
             lua_xmove(lua.get_lua_state(), hook_lua->get_lua_state(), 1);
 
-            // Take a reference to the Lua function (it also pops it of the stack)
-            const int32_t lua_callback_registry_index = hook_lua->registry().make_ref();
+            const auto func_ref = hook_lua->registry().make_ref();
+            const auto thread_ref = mod->lua().registry().make_ref();
 
             Unreal::UClass* instance_of_class = Unreal::UObjectGlobals::StaticFindObject<Unreal::UClass*>(nullptr, nullptr, class_name);
 
             LuaMod::m_static_construct_object_lua_callbacks.emplace_back(
-                    LuaMod::LuaCallbackData{*hook_lua,
-                                            instance_of_class,
-                                            {std::pair<const LuaMadeSimple::Lua*, LuaMod::LuaCallbackData::RegistryIndex>{hook_lua, lua_callback_registry_index}}});
+                    LuaMod::LuaCancellableCallbackData{hook_lua, instance_of_class, func_ref, thread_ref});
 
             return 0;
         });
@@ -2119,8 +2123,9 @@ No overload found for function 'IterateGameDirectories'.
 Overloads:
 #1: IterateGameDirectories()"};
 
-            std::filesystem::path module_directory = UE4SSProgram::get_program().get_module_directory();
-            auto game_content_dir = module_directory.parent_path().parent_path().parent_path() / "Content";
+            //std::filesystem::path module_directory = UE4SSProgram::get_program().get_module_directory();
+            std::filesystem::path game_exe_path = UE4SSProgram::get_program().get_game_exe_path();
+            auto game_content_dir = game_exe_path.parent_path().parent_path().parent_path() / "Content";
             if (!std::filesystem::exists(game_content_dir))
             {
                 Output::send<LogLevel::Warning>(STR("IterateGameDirectories: Could not locate the root directory because the directory structure is unknown "
@@ -2129,8 +2134,8 @@ Overloads:
                 return 1;
             }
 
-            auto game_name = module_directory.parent_path().parent_path().parent_path().stem();
-            auto game_root_directory = module_directory.parent_path().parent_path().parent_path().parent_path();
+            auto game_name = game_exe_path.parent_path().parent_path().parent_path().stem();
+            auto game_root_directory = game_exe_path.parent_path().parent_path().parent_path().parent_path();
             auto directories_table = lua.prepare_new_table();
 
             std::function<void(const std::filesystem::path&, LuaMadeSimple::Lua::Table&)> iterate_directory =
@@ -2234,8 +2239,9 @@ No overload found for function 'CreateLogicModsDirectory'.
 Overloads:
 #1: CreateLogicModsDirectory()"};
 
-            std::filesystem::path module_directory = UE4SSProgram::get_program().get_module_directory();
-            auto game_content_dir = module_directory.parent_path().parent_path().parent_path() / "Content";
+            //std::filesystem::path module_directory = UE4SSProgram::get_program().get_module_directory();
+            std::filesystem::path game_exe_path = UE4SSProgram::get_program().get_game_exe_path();
+            auto game_content_dir = game_exe_path.parent_path().parent_path().parent_path() / "Content";
             if (!std::filesystem::exists(game_content_dir))
             {
                 lua.throw_error("CreateLogicModsDirectory: Could not locate the \"Content\" directory because the directory structure is unknown (not "
@@ -3762,25 +3768,31 @@ Overloads:
             Unreal::UStruct* object_class = constructed_object->GetClassPrivate();
             while (object_class)
             {
-                for (const auto& callback_data : m_static_construct_object_lua_callbacks)
-                {
+                std::erase_if(m_static_construct_object_lua_callbacks, [&](auto& callback_data) -> bool {
+                    bool cancel = false;
                     if (callback_data.instance_of_class == object_class)
                     {
                         try
                         {
-                            for (const auto& [lua, registry_index] : callback_data.registry_indexes)
-                            {
-                                callback_data.lua.registry().get_function_ref(registry_index.lua_index);
-                                LuaType::auto_construct_object(callback_data.lua, constructed_object);
-                                callback_data.lua.call_function(1, 0);
-                            }
+                            callback_data.lua->registry().get_function_ref(callback_data.lua_callback_function_ref);
+                            LuaType::auto_construct_object(*callback_data.lua, constructed_object);
+                            callback_data.lua->call_function(1, 1);
+
+                            cancel = callback_data.lua->is_bool(-1) && callback_data.lua->get_bool(-1);
                         }
                         catch (std::runtime_error& e)
                         {
                             Output::send(STR("{}\n"), to_wstring(e.what()));
                         }
+
+                        if (cancel)
+                        {
+                            // Release the thread_ref to GC.
+                            luaL_unref(callback_data.lua->get_lua_state(), LUA_REGISTRYINDEX, callback_data.lua_callback_thread_ref);
+                        }
                     }
-                }
+                    return cancel;
+                });
 
                 object_class = object_class->GetSuperStruct();
             }

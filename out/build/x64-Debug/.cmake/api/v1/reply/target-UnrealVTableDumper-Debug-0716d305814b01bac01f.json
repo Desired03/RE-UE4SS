@@ -1,0 +1,407 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Output/Debug/UnrealVTableDumper/bin/UnrealVTableDumper.exe"
+		},
+		{
+			"path" : "Output/Debug/UnrealVTableDumper/bin/UnrealVTableDumper.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_link_options",
+			"target_link_libraries",
+			"add_compile_options",
+			"target_compile_definitions",
+			"target_include_directories",
+			"target_compile_features"
+		],
+		"files" : 
+		[
+			"UVTD/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 100,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 49,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 52,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 99,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 216,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 31,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++latest -MDd"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/W3"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/wd4005"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/wd4251"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/wd4068"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/Zc:inline"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/Zc:strictStrings"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/Zc:preprocessor"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "RC_DYNAMIC_OUTPUT_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "RC_FILE_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "RC_FUNCTION_TIMER_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "RC_INI_PARSER_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "RC_INPUT_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "RC_JSON_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "RC_LUA_MADE_SIMPLE_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "RC_PARSER_BASE_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "RC_SINGLE_PASS_SIG_SCANNER_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "RC_SINGLE_PASS_SIG_SCANNER_STATIC"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "RC_UNREAL_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_UNICODE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/UVTD/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/File/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/Input/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/DynamicOutput/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/Helpers/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/out/build/x64-Debug/_deps/raw_pdb-src/src/."
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					10
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "DynamicOutput::@c603931efbe8063ed5cf"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "File::@0f743d1a7b1d0f8915b8"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "Input::@97779eb0aeb89cb4590d"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "raw_pdb::@0b29941025201d94ea66"
+		}
+	],
+	"id" : "UnrealVTableDumper::@0b88da5fa0296553f3a0",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/DEBUG:FULL",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Debug\\bin\\File.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Debug\\bin\\Input.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Debug\\bin\\DynamicOutput.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "Output\\Debug\\bin\\raw_pdb.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Debug\\bin\\File.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "UnrealVTableDumper",
+	"nameOnDisk" : "UnrealVTableDumper.exe",
+	"paths" : 
+	{
+		"build" : "UVTD",
+		"source" : "UVTD"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UVTD/src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UVTD/src/Helpers.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UVTD/src/UVTD.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UVTD/src/Symbols.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UVTD/src/TypeContainer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UVTD/src/VTableDumper.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UVTD/src/UnrealVirtualGenerator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UVTD/src/TemplateClassParser.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UVTD/src/MemberVarsDumper.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UVTD/src/MemberVarsWrapperGenerator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UVTD/src/SolBindingsGenerator.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

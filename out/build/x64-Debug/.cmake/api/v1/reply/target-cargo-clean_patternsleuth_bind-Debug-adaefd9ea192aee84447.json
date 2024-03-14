@@ -1,0 +1,96 @@
+{
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"_add_cargo_build",
+			"_generator_add_package_targets",
+			"_generator_add_cargo_targets",
+			"corrosion_import_crate"
+		],
+		"files" : 
+		[
+			"out/build/x64-Debug/_deps/corrosion-src/cmake/Corrosion.cmake",
+			"out/build/x64-Debug/_deps/corrosion-src/cmake/CorrosionGenerator.cmake",
+			"deps/third/corrosion/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 918,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 266,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 126,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 802,
+				"parent" : 4
+			}
+		]
+	},
+	"id" : "cargo-clean_patternsleuth_bind::@6da358afedac70ca666d",
+	"name" : "cargo-clean_patternsleuth_bind",
+	"paths" : 
+	{
+		"build" : "deps/third/corrosion",
+		"source" : "deps/third/corrosion"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/deps/third/corrosion/CMakeFiles/cargo-clean_patternsleuth_bind",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/deps/third/corrosion/CMakeFiles/cargo-clean_patternsleuth_bind.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

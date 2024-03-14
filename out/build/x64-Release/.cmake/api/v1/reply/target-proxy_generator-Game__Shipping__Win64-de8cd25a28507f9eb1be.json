@@ -1,0 +1,271 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Output/Game__Shipping__Win64/proxy_generator/bin/proxy_generator.exe"
+		},
+		{
+			"path" : "Output/Game__Shipping__Win64/proxy_generator/bin/proxy_generator.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_link_options",
+			"target_link_libraries",
+			"add_compile_options",
+			"target_compile_options",
+			"target_compile_definitions"
+		],
+		"files" : 
+		[
+			"UE4SS/proxy_generator/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 100,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 99,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 214,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 216,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /MP /W3 /wd4005 /wd4251 /wd4068 /Zc:inline /Zc:strictStrings /Zc:preprocessor -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/W3"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/wd4005"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/wd4251"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/wd4068"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/Zc:inline"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/Zc:strictStrings"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/Zc:preprocessor"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/Zi"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/O2"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/Ob2"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/DNDEBUG"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "OVERRIDE_PLATFORM_HEADER_NAME=Windows"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "PLATFORM_MICROSOFT"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "PLATFORM_WINDOWS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "RC_FILE_BUILD_STATIC"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "UBT_COMPILED_PLATFORM=Win64"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "UE_BUILD_SHIPPING"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "UE_GAME"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_UNICODE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/Constructs/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/UE4SSReloaded/RE-UE4SS/deps/first/File/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					4
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "File::@0f743d1a7b1d0f8915b8"
+		}
+	],
+	"id" : "proxy_generator::@a3527e0b46aad388032b",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /MP /W3 /wd4005 /wd4251 /wd4068 /Zc:inline /Zc:strictStrings /Zc:preprocessor -MD",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /DEBUG:FULL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/DEBUG:FULL",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "Output\\Game__Shipping__Win64\\bin\\File.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "imagehlp.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "proxy_generator",
+	"nameOnDisk" : "proxy_generator.exe",
+	"paths" : 
+	{
+		"build" : "UE4SS/proxy_generator",
+		"source" : "UE4SS/proxy_generator"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UE4SS/proxy_generator/main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
