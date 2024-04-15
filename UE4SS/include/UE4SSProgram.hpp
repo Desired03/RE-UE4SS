@@ -126,9 +126,10 @@ namespace RC
 
       public:
         static inline std::vector<std::unique_ptr<Mod>> m_mods;
-        static inline std::vector<std::filesystem::directory_entry> m_r2_subdirectories; // Reloaded II subdirectories
 
         static inline RecognizableStruct m_shared_functions{};
+
+        static inline std::vector<std::filesystem::directory_entry> m_r2_subdirectories; // Reloaded II subdirectories
 
         static inline UE4SSProgram* s_program{};
 

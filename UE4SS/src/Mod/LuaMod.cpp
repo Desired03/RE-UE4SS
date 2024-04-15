@@ -2203,17 +2203,18 @@ Overloads:
                                     }
                                     const auto current_path = std::string{lua.get_string()};
                                     auto files_table = lua.prepare_new_table();
-                                    for (int i = 1; const auto& item : std::filesystem::directory_iterator(current_path))
+                                    auto index = 1;
+                                    for (const auto& item : std::filesystem::directory_iterator(current_path))
                                     {
                                         if (!item.is_directory())
                                         {
-                                            files_table.add_key(i);
+                                            files_table.add_key(index);
                                             auto file_table = lua.prepare_new_table();
                                             file_table.add_pair("__name", to_string(item.path().filename().wstring()).c_str());
                                             file_table.add_pair("__absolute_path", to_string(item.path().wstring()).c_str());
                                             files_table.fuse_pair();
                                         }
-                                        ++i;
+                                        ++index;
                                     }
                                     return 1;
                                 }
@@ -2239,9 +2240,8 @@ No overload found for function 'CreateLogicModsDirectory'.
 Overloads:
 #1: CreateLogicModsDirectory()"};
 
-            //std::filesystem::path module_directory = UE4SSProgram::get_program().get_module_directory();
-            std::filesystem::path game_exe_path = UE4SSProgram::get_program().get_game_exe_path();
-            auto game_content_dir = game_exe_path.parent_path().parent_path().parent_path() / "Content";
+            std::filesystem::path module_directory = UE4SSProgram::get_program().get_module_directory();
+            auto game_content_dir = module_directory.parent_path().parent_path().parent_path() / "Content";
             if (!std::filesystem::exists(game_content_dir))
             {
                 lua.throw_error("CreateLogicModsDirectory: Could not locate the \"Content\" directory because the directory structure is unknown (not "
@@ -3791,6 +3791,7 @@ Overloads:
                             luaL_unref(callback_data.lua->get_lua_state(), LUA_REGISTRYINDEX, callback_data.lua_callback_thread_ref);
                         }
                     }
+
                     return cancel;
                 });
 

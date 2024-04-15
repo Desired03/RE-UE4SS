@@ -398,9 +398,7 @@ namespace RC
         m_game_path_and_exe_name = game_exe_path;
         m_object_dumper_output_directory = m_game_executable_directory;
 
-        // Allow loading of DLLs from mod folders
-        SetDefaultDllDirectories(LOAD_LIBRARY_SEARCH_DEFAULT_DIRS);
-        // Make sure game directory DLLs are also included
+        // Allow loading of DLLs from the game directory
         AddDllDirectory(game_exe_path.c_str());
 
         for (const auto& item : std::filesystem::directory_iterator(m_root_directory))
@@ -756,6 +754,7 @@ namespace RC
         config.bHookCallFunctionByNameWithArguments = settings_manager.Hooks.HookCallFunctionByNameWithArguments;
         config.bHookBeginPlay = settings_manager.Hooks.HookBeginPlay;
         config.bHookLocalPlayerExec = settings_manager.Hooks.HookLocalPlayerExec;
+        config.bHookAActorTick = settings_manager.Hooks.HookAActorTick;
         config.FExecVTableOffsetInLocalPlayer = settings_manager.Hooks.FExecVTableOffsetInLocalPlayer;
 
         Unreal::UnrealInitializer::Initialize(config);
@@ -972,30 +971,6 @@ namespace RC
         LuaType::StaticState::m_property_value_pushers.emplace(FName(L"InterfaceProperty").GetComparisonIndex(), &LuaType::push_interfaceproperty);
     }
 
-    auto UE4SSProgram::setup_r2mod(wchar_t* mod_path_string) -> void
-    {
-        std::filesystem::path mod_path = std::filesystem::path((std::wstring)mod_path_string);
-        std::filesystem::directory_entry mod_subdirectory = std::filesystem::directory_entry(mod_path);
-
-        m_r2_subdirectories.push_back(mod_subdirectory);
-
-        std::wstring directory_lowercase = mod_subdirectory.path().stem().wstring();
-        std::transform(directory_lowercase.begin(), directory_lowercase.end(), directory_lowercase.begin(), std::towlower);
-
-        if (directory_lowercase == L"shared")
-        {
-            // Do stuff when shared libraries have been implemented
-        }
-        else
-        {
-            // Create the mod but don't install it yet
-            if (std::filesystem::exists(mod_subdirectory.path() / "scripts"))
-                m_mods.emplace_back(std::make_unique<LuaMod>(*this, mod_subdirectory.path().parent_path().stem().wstring(), mod_subdirectory.path().wstring()));
-            if (std::filesystem::exists(mod_subdirectory.path() / "dlls"))
-                m_mods.emplace_back(std::make_unique<CppMod>(*this, mod_subdirectory.path().parent_path().stem().wstring(), mod_subdirectory.path().wstring()));
-        }
-    }
-
     auto UE4SSProgram::setup_mods() -> void
     {
         ProfilerScope();
@@ -1037,6 +1012,37 @@ namespace RC
                     m_mods.emplace_back(std::make_unique<CppMod>(*this, sub_directory.path().stem().wstring(), sub_directory.path().wstring()));
             }
         }
+    }
+
+    template <typename ModType>
+    auto install_mod(std::vector<std::unique_ptr<Mod>>& mods) -> void
+    {
+        const auto& mod = mods.back();
+
+        if (!dynamic_cast<ModType*>(mod.get())) return;
+
+        if (std::find_if(mods.begin(), mods.end(), [&](auto& elem) {
+                return elem->get_name() == mod->get_name();
+            }) == mods.end())
+        {
+            mod->set_installable(false);
+            Output::send(STR("Mod name '{}' is already in use.\n"), mod->get_name());
+            return;
+        }
+
+        if (mod->is_installed())
+        {
+            Output::send(STR("Tried to install a mod that was already installed, Mod: '{}'\n"), mod->get_name());
+            return;
+        }
+
+        if (!mod->is_installable())
+        {
+            Output::send(STR("Was unable to install mod '{}' for unknown reasons. Mod is not installable.\n"), mod->get_name());
+            return;
+        }
+
+        mod->set_installed(true);
     }
 
     template <typename ModType>
@@ -1121,6 +1127,33 @@ namespace RC
             {
                 cpp_mod->fire_dll_load(dll_name);
             }
+        }
+    }
+
+    template <typename ModType>
+    auto start_mod(const std::unique_ptr<Mod>& mod) -> void
+    {
+        if (!mod->is_installed()) return;
+        Output::send(STR("Starting {} mod '{}'\n"), std::is_same_v<ModType, LuaMod> ? STR("Lua") : STR("C++"), mod->get_name().data());
+        mod->start_mod();
+    }
+
+    auto UE4SSProgram::setup_r2mod(wchar_t* mod_path_string) -> void
+    {
+        ProfilerScope();
+
+        const std::filesystem::path sub_directory(mod_path_string);
+
+        m_r2_subdirectories.push_back(std::filesystem::directory_entry(sub_directory));
+
+        // We install Lua mods later because we have to wait for UE4SS functions to load
+        if (std::filesystem::exists(sub_directory / "scripts"))
+            m_mods.emplace_back(std::make_unique<LuaMod>(*this, sub_directory.parent_path().stem().wstring(), sub_directory.wstring()));
+        if (std::filesystem::exists(sub_directory / "dlls"))
+        {
+            m_mods.emplace_back(std::make_unique<CppMod>(*this, sub_directory.parent_path().stem().wstring(), sub_directory.wstring()));
+            install_mod<CppMod>(m_mods);
+            start_mod<CppMod>(m_mods.back());
         }
     }
 
@@ -1394,7 +1427,7 @@ namespace RC
         return m_module_file_path.c_str();
     }
 
-     auto UE4SSProgram::get_game_exe_path() -> File::StringViewType
+    auto UE4SSProgram::get_game_exe_path() -> File::StringViewType
     {
         return m_game_path_and_exe_name.c_str();
     }
@@ -1409,7 +1442,7 @@ namespace RC
         return m_mods_directory.c_str();
     }
 
-    auto UE4SSProgram::get_reloaded_mods_directory()->File::StringViewType
+    auto UE4SSProgram::get_reloaded_mods_directory() -> File::StringViewType
     {
         return m_reloaded_mods_directory.c_str();
     }
